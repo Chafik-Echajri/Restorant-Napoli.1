@@ -1,148 +1,197 @@
 const MENU_DATA = [
-    // Pizza
+        {
+        "id": "b1",
+        "name": "Burger Kefta",
+        "description": "Traditional Moroccan beef kefta patty with fresh vegetables, cheese, and homemade sauce.",
+        "category": "Burgers Marocains",
+        "price": 45.00,
+        "image": "assets/images/menu/burger-kefta.png",
+        "available": true,
+        "tags": ["Moroccan"]
+    },
+    {
+        "id": "b2",
+        "name": "Burger Poulet Mchermel",
+        "description": "Grilled Moroccan marinated chicken with fresh vegetables and special sauce.",
+        "category": "Burgers Marocains",
+        "price": 45.00,
+        "image": "assets/images/menu/burger-poulet-mchermel.png",
+        "available": true,
+        "tags": ["Chicken"]
+    },
+
+    {
+        "id": "t1",
+        "name": "Tacos Poulet",
+        "description": "Soft tortilla filled with marinated chicken, fries, cheese, and sauce.",
+        "category": "Tacos",
+        "price": 40.00,
+        "image": "assets/images/menu/tacos-poulet.png",
+        "available": true,
+        "tags": ["Chicken"]
+    },
+    {
+        "id": "t2",
+        "name": "Tacos Viande Hachée",
+        "description": "Soft tortilla filled with seasoned minced beef, fries, cheese, and sauce.",
+        "category": "Tacos",
+        "price": 45.00,
+        "image": "assets/images/menu/tacos-viande-hachee.png",
+        "available": true,
+        "tags": ["Beef"]
+    },
+    {
+        "id": "t3",
+        "name": "Tacos Mixte",
+        "description": "A mix of chicken and minced beef with fries, cheese, and signature sauce.",
+        "category": "Tacos",
+        "price": 50.00,
+        "image": "assets/images/menu/tacos-mixte.png",
+        "available": true,
+        "tags": ["Best Seller"]
+    },
+
     {
         "id": "p1",
-        "name": "Napoli Margherita",
-        "description": "San Marzano tomato, mozzarella di bufala, fresh basil, extra virgin olive oil.",
+        "name": "Pizza Margherita",
+        "description": "Classic pizza with tomato sauce, mozzarella cheese, and fresh basil.",
         "category": "Pizza",
-        "price": 55.00,
+        "price": 35.00,
         "image": "assets/images/menu/pizza-margherita.png",
         "available": true,
-        "tags": ["Vegetarian", "Best Seller"]
+        "tags": ["Vegetarian"]
     },
     {
         "id": "p2",
-        "name": "Diavola",
-        "description": "Tomato sauce, mozzarella, spicy salami, chili peppers.",
+        "name": "Pizza Thon",
+        "description": "Pizza topped with tuna, mozzarella cheese, tomato sauce, and olives.",
         "category": "Pizza",
-        "price": 65.00,
-        "image": "assets/images/menu/pizza-diavola.png",
+        "price": 45.00,
+        "image": "assets/images/menu/pizza-thon.png",
         "available": true,
-        "tags": ["Spicy"]
+        "tags": ["Seafood"]
     },
     {
         "id": "p3",
-        "name": "Quattro Formaggi",
-        "description": "Mozzarella, gorgonzola, parmesan, provolone (no tomato sauce).",
+        "name": "Pizza Poulet",
+        "description": "Pizza topped with marinated chicken, mozzarella cheese, and tomato sauce.",
         "category": "Pizza",
-        "price": 70.00,
-        "image": "assets/images/menu/pizza-quattro-formaggi.png",
-        "available": true,
-        "tags": ["Vegetarian"]
-    },
-    // Pasta
-    {
-        "id": "pa1",
-        "name": "Spaghetti Carbonara",
-        "description": "Authentic Roman recipe with guanciale, pecorino romano, egg yolk, black pepper.",
-        "category": "Pasta",
-        "price": 75.00,
-        "image": "assets/images/menu/pasta-carbonara.png",
-        "available": true,
-        "tags": ["Chef's Choice"]
-    },
-    {
-        "id": "pa2",
-        "name": "Penne Arrabbiata",
-        "description": "Spicy tomato sauce with garlic and parsley.",
-        "category": "Pasta",
         "price": 50.00,
-        "image": "assets/images/menu/pasta-penne-arrabbiata.png",
+        "image": "assets/images/menu/pizza-poulet.png",
         "available": true,
-        "tags": ["Vegetarian", "Spicy"]
+        "tags": ["Chicken"]
     },
-    {
-        "id": "pa3",
-        "name": "Tagliatelle Bolognese",
-        "description": "Slow-cooked beef and pork ragu with fresh egg pasta.",
-        "category": "Pasta",
-        "price": 80.00,
-        "image": "assets/images/menu/pasta-tagliatelle-bolognese.png",
-        "available": true,
-        "tags": []
-    },
-    // Risotto
-    {
-        "id": "r1",
-        "name": "Mushroom Risotto",
-        "description": "Creamy arborio rice with porcini mushrooms and truffle oil.",
-        "category": "Risotto",
-        "price": 85.00,
-        "image": "assets/images/menu/risotto-mushroom.png",
-        "available": true,
-        "tags": ["Vegetarian"]
-    },
-    {
-        "id": "r2",
-        "name": "Seafood Risotto",
-        "description": "Risotto with shrimp, calamari, and mussels in a light tomato broth.",
-        "category": "Risotto",
-        "price": 95.00,
-        "image": "assets/images/menu/risotto-seafood.png",
-        "available": true,
-        "tags": []
-    },
-    // Antipasti
+
     {
         "id": "a1",
-        "name": "Bruschetta Classica",
-        "description": "Toasted bread with fresh chopped tomatoes, garlic, basil, and olive oil.",
-        "category": "Antipasti",
-        "price": 35.00,
-        "image": "assets/images/menu/antipasti-bruschetta.png",
+        "name": "Frites",
+        "description": "Crispy golden french fries.",
+        "category": "Accompagnements",
+        "price": 10.00,
+        "image": "assets/images/menu/frites.png",
         "available": true,
-        "tags": ["Vegetarian"]
+        "tags": ["Side"]
     },
     {
         "id": "a2",
-        "name": "Caprese Salad",
-        "description": "Fresh mozzarella, tomatoes, and basil with balsamic glaze.",
-        "category": "Antipasti",
-        "price": 55.00,
-        "image": "assets/images/menu/antipasti-caprese.png",
+        "name": "Frites Fromage",
+        "description": "Crispy french fries topped with melted cheese.",
+        "category": "Accompagnements",
+        "price": 18.00,
+        "image": "assets/images/menu/frites-fromage.png",
+        "available": true,
+        "tags": ["Cheese"]
+    },
+    {
+        "id": "a3",
+        "name": "Salade Marocaine",
+        "description": "Fresh Moroccan salad with tomatoes, cucumbers, onions, and herbs.",
+        "category": "Accompagnements",
+        "price": 15.00,
+        "image": "assets/images/menu/salade-marocaine.png",
         "available": true,
         "tags": ["Healthy", "Vegetarian"]
     },
-    // Desserts
+
     {
-        "id": "ds1",
-        "name": "Classic Tiramisu",
-        "description": "Layers of espresso-soaked ladyfingers and mascarpone cream.",
-        "category": "Desserts",
-        "price": 45.00,
-        "image": "assets/images/menu/desserts-tiramisu.png",
+        "id": "s1",
+        "name": "Harira",
+        "description": "Traditional Moroccan soup with tomatoes, lentils, chickpeas, and herbs.",
+        "category": "Soupes",
+        "price": 15.00,
+        "image": "assets/images/menu/harira.png",
         "available": true,
-        "tags": ["Sweet"]
+        "tags": ["Traditional"]
     },
     {
-        "id": "ds2",
-        "name": "Panna Cotta",
-        "description": "Vanilla cream pudding with berry coulis.",
-        "category": "Desserts",
-        "price": 40.00,
-        "image": "assets/images/menu/desserts-panna-cotta.png",
+        "id": "s2",
+        "name": "Bissara",
+        "description": "Traditional Moroccan fava bean soup served with olive oil and spices.",
+        "category": "Soupes",
+        "price": 12.00,
+        "image": "assets/images/menu/bissara.png",
         "available": true,
-        "tags": ["Sweet"]
+        "tags": ["Traditional", "Vegetarian"]
     },
-    // Drinks
+
     {
-        "id": "dr1",
-        "name": "San Pellegrino",
-        "description": "Sparkling Italian mineral water (500ml).",
-        "category": "Drinks",
-        "price": 25.00,
-        "image": "assets/images/menu/drinks-san-pellegrino.png",
+        "id": "d1",
+        "name": "Coca-Cola",
+        "description": "Refreshing Coca-Cola soft drink.",
+        "category": "Boissons",
+        "price": 10.00,
+        "image": "assets/images/menu/coca-cola.png",
         "available": true,
-        "tags": []
+        "tags": ["Soft Drink"]
     },
     {
-        "id": "dr2",
-        "name": "Italian Soda (Lemon)",
-        "description": "Refreshing lemon soda.",
-        "category": "Drinks",
-        "price": 30.00,
-        "image": "assets/images/menu/drinks-italian-soda.webp",
+        "id": "d2",
+        "name": "Hawai",
+        "description": "Refreshing tropical fruit-flavored soft drink.",
+        "category": "Boissons",
+        "price": 10.00,
+        "image": "assets/images/menu/hawai.png",
         "available": true,
-        "tags": []
+        "tags": ["Soft Drink"]
+    },
+    {
+        "id": "d3",
+        "name": "Sprite",
+        "description": "Lemon-lime flavored refreshing soft drink.",
+        "category": "Boissons",
+        "price": 10.00,
+        "image": "assets/images/menu/sprite.png",
+        "available": true,
+        "tags": ["Soft Drink"]
+    },
+    {
+        "id": "d4",
+        "name": "Eau Minérale",
+        "description": "Pure bottled mineral water.",
+        "category": "Boissons",
+        "price": 8.00,
+        "image": "assets/images/menu/eau-minerale.png",
+        "available": true,
+        "tags": ["Water"]
+    },
+    {
+        "id": "d5",
+        "name": "Jus d'Orange",
+        "description": "Freshly squeezed orange juice.",
+        "category": "Boissons",
+        "price": 15.00,
+        "image": "assets/images/menu/jus-orange.png",
+        "available": true,
+        "tags": ["Fresh Juice"]
+    },
+    {
+        "id": "d6",
+        "name": "Thé à la Menthe",
+        "description": "Traditional Moroccan mint tea.",
+        "category": "Boissons",
+        "price": 10.00,
+        "image": "assets/images/menu/the-menthe.png",
+        "available": true,
+        "tags": ["Traditional"]
     }
 ];
